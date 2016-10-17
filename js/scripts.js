@@ -12,5 +12,21 @@ var reverse = function(sentenceInput) {
   return result.toUpperCase();
 }
 
+var addReverse = function(letters, sentenceInput) {
+  return sentenceInput + letters;
+}
+
+var halfWay = function(sentence) {
+  var result = sentence.length / 2;
+  var result2 = sentence.charAt(result);
+  return result2 + sentence;
+}
+
+
+
+
+
 alert(firstLastSlice(sentence));
 alert(reverse(sentence));
+alert(addReverse(reverse(sentence), sentence));
+alert(halfWay(sentence));
