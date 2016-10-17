@@ -1,4 +1,9 @@
 
+//jQuery("").click(function() {
+//  alert(reverse(sentence));
+//  alert(addReverse(reverse(sentence), sentence));
+//  alert(halfWay(sentence));
+//});
 
 var sentence = prompt("Please type a sentence!");
 
@@ -21,12 +26,13 @@ var halfWay = function(sentence) {
   var result2 = sentence.charAt(result);
   return result2 + sentence;
 }
+jQuery(".og").click(function() {
+  alert(sentence);
+});
 
-
-
-
-
-alert(firstLastSlice(sentence));
-alert(reverse(sentence));
-alert(addReverse(reverse(sentence), sentence));
-alert(halfWay(sentence));
+jQuery("#cipher").click(function() {
+  alert(reverse(sentence));
+  alert(addReverse(reverse(sentence), sentence));
+  alert(halfWay(sentence));
+  alert(firstLastSlice(sentence));
+});
